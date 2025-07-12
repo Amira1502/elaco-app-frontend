@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from 'react';
-import ComponentCard from '../../common/ComponentCard';
+import ComponentCard from '../../../common/ComponentCard';
 import Label from '../Label';
 import Input from '../input/InputField';
 import Select from '../Select';
 import { ChevronDownIcon, EyeCloseIcon, EyeIcon, TimeIcon } from '../../../icons';
-import DatePicker from '@/components/form/date-picker';
+import DatePicker from '../date-picker';
 
 export default function DefaultInputs() {
   const [showPassword, setShowPassword] = useState(false);
@@ -67,7 +67,7 @@ export default function DefaultInputs() {
             id="date-picker"
             label="Date Picker Input"
             placeholder="Select a date"
-            onChange={(dates, currentDateString) => {
+            onChange={(dates: Date[], currentDateString: string) => {
               // Handle your logic
               console.log({ dates, currentDateString });
             }}

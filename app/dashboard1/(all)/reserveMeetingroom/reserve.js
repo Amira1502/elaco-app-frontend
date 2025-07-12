@@ -654,8 +654,8 @@ export default function Reserve({
               )}
             </div>
           </form>
-         </div>
-       </motion.div>
+        </div>
+      </motion.div>
     </div>,
     document.body
   );

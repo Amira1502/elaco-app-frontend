@@ -80,16 +80,16 @@ export default function SpaceGuide() {
           <section className="bg-white rounded-xl shadow p-6">
             <h2 className="text-xl font-semibold text-gray-800 mb-2">Need to escalate?</h2>
             <p className="text-gray-700">
-              You can also reach out directly to our CEO if needed:
+              You can also reach out directly to our CFO if needed:
             </p>
             <p className="mt-2 text-gray-700">
               <Mail className="inline w-4 h-4 mr-2 text-blue-500" />
-              <a href="mailto:seif@workzone.tn" className="text-blue-600 hover:underline">
-                seif@workzone.tn
+              <a href="mailto:elacocoworking@gmail.com" className="text-blue-600 hover:underline">
+              elacocoworking@gmail.com
               </a>
             </p>
             <p className="text-gray-700">
-              <Phone className="inline w-4 h-4 mr-2 text-blue-500" />+216 22 252 273
+              <Phone className="inline w-4 h-4 mr-2 text-blue-500" />+216 98 444 080
             </p>
           </section>
         </div>
