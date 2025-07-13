@@ -1,6 +1,6 @@
 // 'use client';
 // import React, { useState, useEffect, useRef } from 'react';
-// import { Trash2, Search } from 'lucide-react';
+// import { Search } from 'lucide-react';
 // import Pointsmodal from './../pointsModal.js'
 // // import 
 

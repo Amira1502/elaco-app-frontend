@@ -18,7 +18,7 @@ export default function Benefits({images}) {
         </h2>
         <p className="max-w-3xl text-gray-500 text-base sm:text-lg">
         Our open space offers a bright, modern, and flexible environment where creativity flows freely.
-        Whether you're working solo, collaborating with a team, or networking with others, you'll find the
+        Whether you&apos;re working solo, collaborating with a team, or networking with others, you&apos;ll find the
         perfect balance of focus and connection to thrive throughout your day.
         </p>
       </div>

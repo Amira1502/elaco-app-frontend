@@ -13,7 +13,7 @@ export default function ContactHero() {
           Get in Touch
         </h1>
         <p className="text-lg text-gray-600">
-          Have questions or need help? Fill out the form and we'll get back to you shortly.
+          Have questions or need help? Fill out the form and we&apos;ll get back to you shortly.
         </p>
       </motion.div>
     </section>

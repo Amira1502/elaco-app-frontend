@@ -1,15 +1,15 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
+
 import React, { useState } from "react";
 import { Dropdown } from "./Dropdown";
 import { DropdownItem } from "./DropdownItem";
-import { useRouter } from "next/navigation";
+
 
 
 export default function UserDropdown({user}) {
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
+
   
     const handleLogout = async () => {
     try {

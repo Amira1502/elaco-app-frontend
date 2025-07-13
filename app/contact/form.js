@@ -60,7 +60,7 @@ export default function ContactForm() {
           <span className="w-1.5 h-1.5 bg-[#07ebbd] rounded-full"></span>
         </div>
         <div className="text-gray-500 max-w-2xl mx-auto">
-        <strong>Questions, bug reports, feedback, feature requests — we're here for it all.</strong>
+        <strong>Questions, bug reports, feedback, feature requests — we&apos;re here for it all.</strong>
   
       </div>
       </div>

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
 import Benefits from "@/app/components/benefits";
-import { Button } from "@/components/ui/button";
+
 import { useUser } from "@/app/context/UserContext";
 import { useRouter } from "next/navigation";
 
@@ -25,7 +25,7 @@ const Rooms = [
 
 export default function MeetingRoomPage() {
   const [subs, setSubs] = useState([]);
-  const { idUser, loading: userLoading } = useUser();
+  const { idUser } = useUser();
   const router = useRouter();
 
   useEffect(() => {

@@ -1,8 +1,7 @@
-import Image from "next/image";
-import Container from "./Container";
+
 // import heroImg2 from "../../public/openspace.jpg"; // Ensure this path is correct
 
-export default function Hero2({image}) {
+export default function Hero2() {
   return (
     <div className="h-[690px] text-gray-900 mb-20 bg-opacity-50">
       {/* Large Screen Layout */}

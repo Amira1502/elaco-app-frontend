@@ -2,17 +2,15 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Link from "next/link";
-
 
 export default function Login() {
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [generalError, setGeneralError] = useState("");
-  const router = useRouter();
   const searchParams = useSearchParams();
   const numtable = searchParams.get("numtable");
   const redirectPath = searchParams.get("redirect");
@@ -127,7 +125,7 @@ export default function Login() {
         </button>
 
         <p className="text-sm text-gray-600 text-center mt-6">
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
           <Link href="/signup" className="text-[#07ebbd] font-medium hover:underline">
             Sign up
           </Link>

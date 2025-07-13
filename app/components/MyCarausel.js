@@ -90,8 +90,6 @@ import SubscriptionCard from "./SubscriptionCard";
 
 export function MyCarrousel({subs , descriptions}) {
 
-  const [modalOpen, setModalOpen] = useState(false);
-
   return (
     <Carousel opts={{ align: "start" }} className="w-full overflow-visible">
     

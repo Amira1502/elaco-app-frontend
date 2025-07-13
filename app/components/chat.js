@@ -27,8 +27,7 @@ export default function CoworkingSpaceBot() {
     },
   ]);
   const [isTyping, setIsTyping] = useState(false);
-  const [botActivity, setBotActivity] = useState(0);
-  const [userId, setUserId] = useState('');
+
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
 
