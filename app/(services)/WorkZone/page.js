@@ -25,9 +25,8 @@ export default function ServicesPage() {
   const [fetchedData, setFetchedData] = useState([]);
   const [descriptions, setDescriptions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [showModal, setShowModal] = useState(false);
   const router = useRouter();
-  const { idUser, loading: userLoading } = useUser();
+  const { idUser } = useUser();
 
 
 

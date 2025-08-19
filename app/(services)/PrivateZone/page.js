@@ -10,31 +10,17 @@ import { Pacifico } from 'next/font/google';
 import Benefits from '@/app/components/benefits';
 import { useUser } from "@/app/context/UserContext"     
 
-const pacifico = Pacifico({ subsets: ['latin'], weight: '400' });
+
 const services = [
   { img: '/officeroom1.jpg', name: 'Open Space Coworking' },
   { img: '/officeroom2.jpg', name: 'Modern Shared Workspace' }
-];
-const Rooms = [
-  {
-    title: "Private Office Premium +",
-    description: "A cozy and professional meeting space, ideal for small team discussions, client meetings, and brainstorming sessions. Perfect for groups of 4 to 6 people looking for a quiet and well-equipped environment.",
-    image: "/officeroom1.jpg"
-  },
-  {
-    title: "Private Office",
-    description: "A spacious training room designed for workshops, seminars, and group learning sessions. It’s the ideal setting for hosting formations, with enough room to accommodate up to 16 participants comfortably.",
-    image: "/officeroom2.jpg"
-  }
 ];
 
 export default function MeetingRoom() {
   const [fetchedData, setFetchedData] = useState([]);
   const router = useRouter();
-  const [descriptions, setDescriptions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [showModal, setShowModal] = useState(false);
-  const { idUser, loading: userLoading } = useUser();
+  const { idUser } = useUser();
 
 
   
@@ -46,7 +32,6 @@ export default function MeetingRoom() {
       return () => clearInterval(interval);
     }, []);
   
-    const currentService = services[currentIndex];
   useEffect(() => {
     async function fetchingSubscriptions() {
       try {
@@ -70,13 +55,6 @@ export default function MeetingRoom() {
       router.push(`/login?redirect=${encodeURIComponent(target)}`);
     }
   };
-
-  const Feature = ({ icon, label }) => (
-    <div className="flex flex-col items-center gap-1">
-      {icon}
-      <span className="text-sm font-medium text-white">{label}</span>
-    </div>
-  );
 
   return (
     <div className="bg-white text-gray-800">

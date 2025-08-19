@@ -2,13 +2,13 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 import { useUser } from "@/app/context/UserContext";
 import Confetti from "react-confetti";
 import { useWindowSize } from "react-use";
 
-export default function PaymentSub() {
+function PaymentContent() {
   const [isWorked, setIsWorked] = useState(null);
   const [error, setError] = useState(null);
   const { width, height } = useWindowSize();
@@ -134,5 +134,13 @@ export default function PaymentSub() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function PaymentSub() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <PaymentContent />
+    </Suspense>
   );
 }

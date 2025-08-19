@@ -8,7 +8,7 @@ import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-export default function UserMetaCard({ all }) {
+export default function UserMetaCard({ all }: { all?: { user?: { photo?: string; firstName?: string; lastName?: string } } }) {
   // const { isOpen, openModal, closeModal } = useModal();
   const router = useRouter();
 

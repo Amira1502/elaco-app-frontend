@@ -5,7 +5,6 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useUser } from "@/app/context/UserContext"     // Adjust path based on your structure
 
 export default function Add() {
-  const [responseStatus, setResponseStatus] = useState(null);
   const [error, setError] = useState(null);
   const [start_timeError, setStart_timeError] = useState("");
   const [end_timeError, setEnd_timeError] = useState("");
@@ -17,7 +16,7 @@ export default function Add() {
   const [showSubmit, setShowSubmit] = useState(false);
   const [paymentError, setPaymentError] = useState("");
   const [userName, setUserName] = useState("");
-  const { idUser, loading: userLoading } = useUser();
+  const { idUser } = useUser();
 
 
   const router = useRouter();
